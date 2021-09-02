@@ -1,0 +1,26 @@
+.PostBody{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid black; 
+    height: 100px;
+    width: 300px;
+
+    display: flex;
+    margin-top: 20px;
+}
+
+.avatarUser{
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+.nameUser{
+    margin: 10px 0 5px 10px;
+    font-size: 18px;
+}
+
+.textUser{
+    margin-left: 10px;
+}
