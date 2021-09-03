@@ -8,10 +8,10 @@ const MyPosts=()=>{
                 <p><button>Add new post</button></p>
                 <textarea className="profileTextarea"></textarea>
                 </div>
-                <Post />
-                <Post />
-                <Post />
-                <Post />
+                <Post message="Hi. How a u?"/>
+                <Post message="Good weather"/>
+                <Post message="1000-7"/>
+                <Post message="Za sho"/>
                 
         </div>
     )

@@ -1,0 +1,34 @@
+.DialogsBody{
+    padding-left: 15px;
+    width: 70%;
+    position: relative;
+    left: 270px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.dialogsAvatar{
+    height: 75px;
+    width: 75px;
+}
+
+.wrapperDialogs{
+    width: 300px;
+    display: flex;
+    
+    
+}
+
+.dialogsName{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.dialogsMessage{
+    margin-left: 15px;
+}
+
+.dialog{
+    margin-bottom: 15px;
+}

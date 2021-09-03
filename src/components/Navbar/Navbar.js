@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "./Navbar.css"
 
 const Navbar=()=>{
@@ -6,11 +7,11 @@ const Navbar=()=>{
             <div className="avatarImage"></div>
             <div className="usernameText">Valerii Zhmyshenko</div>
             <div className="routingBar">
-                <p><a href="#">Profile</a></p>
-                <p><a href="#">Messages</a></p>
-                <p><a href="#">News</a></p>
-                <p><a href="#">Music</a></p>
-                <p><a href="#">Settings</a></p>
+                <p><NavLink to="/profile">Profile</NavLink></p>
+                <p><NavLink to="/dialogs">Messages</NavLink></p>
+                <p><NavLink to="#">News</NavLink></p>
+                <p><NavLink to="#">Music</NavLink></p>
+                <p><NavLink to="#">Settings</NavLink></p>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import "./Post.css"
 import avatarUser from "../../../assets/avatar2.jpg"
 
-const Post=()=>{
+const Post=(props)=>{
     return(
         <div className="PostBody">
             
@@ -11,7 +11,7 @@ const Post=()=>{
                     Stas Rudenko
                 </div>
                 <div className="textUser">
-                    Smth interesting
+                    {props.message}
                 </div>
             </div>
             
