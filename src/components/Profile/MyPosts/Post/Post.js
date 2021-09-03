@@ -13,6 +13,9 @@ const Post=(props)=>{
                 <div className="textUser">
                     {props.message}
                 </div>
+                <div className="likes">
+                    Likes {props.likesCount}
+                </div>
             </div>
             
         </div>

@@ -1,14 +1,14 @@
 import "./Profile.css"
-import avatar from '../assets/avatar.jpg'
 
 import MyPosts from "./MyPosts/MyPosts"
+import ProfileInfo from "./ProfileInfo/ProfileInfo"
 
-const Profile=()=>{
+const Profile=(props)=>{
+
     return(
         <div className="ProfileBody">
-            <img src={avatar} className="profileAvatar"/>
-            <h1>Valerii Albertovich</h1>
-            <MyPosts />
+            <ProfileInfo />
+            <MyPosts posts={props.posts} />
         </div>
     )
 }

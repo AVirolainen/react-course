@@ -1,55 +1,16 @@
 import "./Dialogs.css"
-import avatarDialogs from "../assets/avatar3.jpg"
-import { NavLink } from "react-router-dom"
 
-const Dialogs=()=>{
+import DialogsItem from "./DialogsItem/DialogsItem"
+
+const Dialogs=(props)=>{
     return(
         <div className="DialogsBody">
-            
-            <div className="dialog">
-            <div className="wrapperDialogs">
-                <img src={avatarDialogs}  className="dialogsAvatar"/>
-                    <div>
-                    <NavLink to="/dialogs/1" className="dialogsName">
-                        Stas
-                    </NavLink>
-                    <div className="dialogsMessage">
-                        How a u
-                    </div>
-                    </div>
+            {
+                props.dialogs.map((item)=>{
+                    return <DialogsItem userName={item.userName} id={item.id} userMessage={item.userMessage} />
+                })
+            }
 
-                </div>
-            </div>
-
-            <div className="dialog">
-            <div className="wrapperDialogs">
-                <img src={avatarDialogs}  className="dialogsAvatar"/>
-                    <div>
-                    <NavLink to="/dialogs/1" className="dialogsName">
-                        Stas
-                    </NavLink>
-                    <div className="dialogsMessage">
-                        How a u
-                    </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="dialog">
-            <div className="wrapperDialogs">
-                <img src={avatarDialogs}  className="dialogsAvatar"/>
-                    <div>
-                    <NavLink to="/dialogs/1" className="dialogsName">
-                        Stas
-                    </NavLink>
-                    <div className="dialogsMessage">
-                        How a u
-                    </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
     )
 }
