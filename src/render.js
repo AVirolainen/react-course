@@ -6,8 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import state from "./components/redux/state.js"
 import {addPost} from "./components/redux/state.js"
 
-import {rerenderEntireTree} from './render'
-
-rerenderEntireTree(state)
-
-reportWebVitals();
+export let rerenderEntireTree =(state)=>{
+  ReactDOM.render(
+    <React.StrictMode>
+      <App appState={state} addPost={addPost}/>
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+}
