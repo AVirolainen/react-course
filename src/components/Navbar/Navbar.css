@@ -16,6 +16,12 @@
     height: 100px;
     border-radius: 50px;
     margin-top: 30px;
+    transition: 0.5s
+}
+
+.avatarImage:hover{
+    border-radius: 0;
+    transform: scale(1.25)
 }
 
 .usernameText{
@@ -25,4 +31,24 @@
 
 .linkRoute{
     width: 100%;
+}
+
+.routingBar{
+    width: 250px;
+}
+
+.navLinkStyling{
+    color: black;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 20px;
+    text-transform: uppercase;
+    display:block;
+
+    transition: 1s;
+}
+
+.navLinkStyling:hover{
+    background: linear-gradient(to top, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.5
 }

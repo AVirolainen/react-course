@@ -17,7 +17,8 @@ function App(props) {
             <Navbar />
       
             <Route exact path="/dialogs" render={()=><Dialogs 
-              dialogs={props.appState.dialogsPage.dialogs}/>} />
+              dialogsPage={props.appState.dialogsPage}
+              dispatch={props.dispatch}/>} />
               
             <Route path="/profile" render={()=><Profile 
               profilePage={props.appState.profilePage} 

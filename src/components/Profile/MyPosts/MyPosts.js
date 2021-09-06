@@ -25,7 +25,9 @@ const MyPosts=(props)=>{
                     className="profileTextarea" 
                     onChange={onPostChange} 
                     ref={newPostElement}
-                    value={props.newPostText}></textarea>
+                    value={props.newPostText}>
+
+                </textarea>
                 </div>
                 {
                     props.posts.map(item=>{
