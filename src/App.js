@@ -16,8 +16,12 @@ function App(props) {
           <div className="wrapper">
             <Navbar />
       
-            <Route exact path="/dialogs" render={()=><Dialogs dialogs={props.appState.dialogsPage.dialogs}/>} />
-            <Route path="/profile" component={()=><Profile posts={props.appState.profilePage.posts} addPost={props.addPost}/>} />
+            <Route exact path="/dialogs" render={()=><Dialogs 
+              dialogs={props.appState.dialogsPage.dialogs}/>} />
+              
+            <Route path="/profile" render={()=><Profile 
+              profilePage={props.appState.profilePage} 
+              dispatch={props.dispatch}/>} />
 
           </div>
         </div>
