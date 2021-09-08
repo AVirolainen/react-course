@@ -1,7 +1,14 @@
 import "./Post.css"
 import avatarUser from "../../../assets/avatar2.jpg"
 
+import { addLikeActionCreator } from "../../../redux/profileReducer"
+
 const Post=(props)=>{
+
+    const addLike= ()=>{
+        props.dispatch(addLikeActionCreator(props.id))
+    }
+
     return(
         <div className="PostBody">
             
@@ -13,9 +20,12 @@ const Post=(props)=>{
                 <div className="textUser">
                     {props.message}
                 </div>
+            
                 <div className="likes">
                     Likes {props.likesCount}
                 </div>
+                <div className="heart" onClick={()=>{addLike()}}></div>
+                
             </div>
             
         </div>

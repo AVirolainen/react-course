@@ -1,7 +1,7 @@
 import "./MyPosts.css"
 import React from 'react';
 import Post from "./Post/Post"
-import { updateNewPostActionCreator, addPostActionCreator } from "../../redux/state";
+import { updateNewPostActionCreator, addPostActionCreator } from "../../redux/profileReducer";
 
 const MyPosts=(props)=>{
 
@@ -31,7 +31,7 @@ const MyPosts=(props)=>{
                 </div>
                 {
                     props.posts.map(item=>{
-                        return <Post message={item.postMessage} id={item.id} likesCount={item.likesCount} />
+                        return <Post message={item.postMessage} id={item.id} likesCount={item.likesCount} dispatch={props.dispatch}/>
                     })
                 }
                 
