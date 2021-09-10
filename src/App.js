@@ -20,9 +20,7 @@ function App(props) {
               dialogsPage={props.appState.dialogsPage}
               dispatch={props.dispatch}/>} />
               
-            <Route path="/profile" render={()=><Profile 
-              profilePage={props.appState.profilePage} 
-              dispatch={props.dispatch}/>} />
+            <Route path="/profile" render={()=><Profile store={props.store}/>} />
 
           </div>
         </div>

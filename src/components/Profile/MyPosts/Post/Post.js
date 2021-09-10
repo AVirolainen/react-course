@@ -5,9 +5,9 @@ import { addLikeActionCreator } from "../../../redux/profileReducer"
 
 const Post=(props)=>{
 
-    const addLike= ()=>{
-        props.dispatch(addLikeActionCreator(props.id))
-    }
+    // const addLike= ()=>{
+    //     props.dispatch(addLikeActionCreator(props.id))
+    // }
 
     return(
         <div className="PostBody">
@@ -24,7 +24,7 @@ const Post=(props)=>{
                 <div className="likes">
                     Likes {props.likesCount}
                 </div>
-                <div className="heart" onClick={()=>{addLike()}}></div>
+                <div className="heart" onClick={()=>{}}></div>
                 
             </div>
             
