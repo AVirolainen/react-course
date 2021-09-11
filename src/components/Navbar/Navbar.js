@@ -9,7 +9,7 @@ const Navbar=()=>{
             <div className="routingBar">
                 <NavLink to="/profile" className="navLinkStyling">Profile</NavLink>
                 <NavLink to="/dialogs" className="navLinkStyling">Messages</NavLink>
-                <NavLink to="#" className="navLinkStyling">News</NavLink>
+                <NavLink to="/users" className="navLinkStyling">Users</NavLink>
                 <NavLink to="#" className="navLinkStyling">Music</NavLink>
                 <NavLink to="#" className="navLinkStyling">Settings</NavLink>
             </div>

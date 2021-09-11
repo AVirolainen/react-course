@@ -29,30 +29,28 @@ let initialState={
 }
 
 const profileReducer = (state=initialState, action)=>{
-    if((action.type) === ADD_POST){
-        let newPost = {
-            id: 5,
-            postMessage: state.newPostText,
-            likesCount: 0
+    switch(action.type){
+        case ADD_POST:{
+            let newPost = {
+                id: 5,
+                postMessage: state.newPostText,
+                likesCount: 0
+            };
+            let stateCopy = {...state};
+            stateCopy.posts = [...state.posts]
+            stateCopy.posts.push(newPost)
+            stateCopy.newPostText = ' '
+            return stateCopy
         }
-        state.posts.push(newPost)
-        state.newPostText = ' '
+        case UPDATE_NEW_POST_TEXT:{
+            let stateCopy = {...state}
+            stateCopy.newPostText = action.newText;
+            return stateCopy
+        }
+        default:
+            return state
         
     }
-    else if (action.type === UPDATE_NEW_POST_TEXT){
-        state.newPostText = action.newText
-    }
-    else if (action.type === ADD_LIKE){
-        console.log('rabotaet: '+action.id)
-        state.posts.map((item)=>{
-            if(item.id == action.id){
-                item.likesCount +=1
-            }
-        })
-    }
-
-
-    return state
 }
 
 export const addPostActionCreator = ()=>{

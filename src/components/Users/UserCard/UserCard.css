@@ -1,0 +1,107 @@
+.UserCardBody{
+    width: 85%;
+    height: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+}
+
+.userAvatarBox{
+    width: 35%;
+    height: 100%;
+    background-color: #f59342;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+.userAvatarBox:hover{
+    background-color: #ffb67a
+}
+
+.userAvatarBox:hover .userAvatar{
+    transform: scale(1.15);
+}
+
+.userAvatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    transition: 1s;
+    
+}
+
+.userInfoBox{
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.userName{
+    color: grey;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.userCountry{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: grey;
+    margin-top: 10px;
+}
+
+.userStatus{
+    display: flex;
+    margin-top: 30px;
+}
+
+.statusText{
+    color: grey;
+    margin-right: 10px;
+}
+
+.btn {
+    border: 1px solid #f59342;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "poppins";
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+
+    margin-top: 45px;
+    left: 430px;
+}
+
+.btn1{
+    color: #f59342;
+}
+
+.btn1:hover{
+    color: #fff;
+  }
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #f59342;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+
+.btn1:hover::before{
+    height: 180%;
+  }

@@ -6,6 +6,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     text-align: center;
     position: fixed
+    
 }
 
 .avatarImage{
@@ -35,6 +36,7 @@
 
 .routingBar{
     width: 250px;
+    margin-top: 50px
 }
 
 .navLinkStyling{
@@ -49,6 +51,5 @@
 }
 
 .navLinkStyling:hover{
-    background: linear-gradient(to top, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 0.5
 }
