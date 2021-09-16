@@ -4,7 +4,7 @@ import Profile from "./components/Profile/Profile"
 import Navbar from './components/Navbar/Navbar';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
 import { Route } from 'react-router-dom';
-import UsersPage from './components/Users/UsersPage';
+import UsersPageContainer from './components/Users/UsersPageContainer';
 
 
 
@@ -18,7 +18,7 @@ function App(props) {
             <Navbar />
             <Route exact path="/dialogs" render={()=><DialogsContainer/>} />
             <Route path="/profile" render={()=><Profile />} />
-            <Route path="/users" render={()=><UsersPage />} />
+            <Route path="/users" render={()=><UsersPageContainer />} />
 
           </div>
         </div>

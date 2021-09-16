@@ -73,9 +73,9 @@
     transition: 0.8s;
     position: relative;
     overflow: hidden;
-
+    width: 120px;
     margin-top: 45px;
-    left: 430px;
+    left: 400px;
 }
 
 .btn1{
